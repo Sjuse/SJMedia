@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;800&display=swap');
+
+:root{
+    --black:#192a56;
+    --orange:#F95F1D;
+    --yellow:#ffa801;
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+section{
+    padding:0 7%;
+    padding-top: 7.5rem;
+    padding-bottom: 3rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .7rem 2.5rem;
+    font-size: 1.7rem;
+    color: var(--yellow);
+    border: .2rem solid var(--yellow);
+    cursor: pointer;
+    background: none;
+}
+
+.btn:hover{
+    background: var(--yellow);
+    color: #fff;
+}
+
+header{
+    position: fixed;
+    top:0; left: 0;
+    width: 100%;
+    z-index: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 7%;
+    padding-bottom: 5px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    background: #fff;
+}
+
+header .logo img{
+    width: 300px;
+    padding-left: 90px;
+    margin-top: -10px;
+}
+
+header .navbar a{
+    font-size: 2.2rem;
+    margin-left: 3rem;
+    margin-right: 1.5rem;
+    color: var(--black);
+}
+
+header .navbar a:hover{
+    color:var(--orange);
+}
+
+#menu-bar{
+    font-size: 3rem;
+    color: var(--black);
+    cursor: pointer;
+    display: none;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    background:url(images/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+}
+
+.home .content{
+    width: 700px;
+    padding-left: 35px;
+}
+
+.home .image{
+    padding: 1rem;
+    flex: 1 1 40rem;
+    text-align: center;
+}
+
+.home .content h3{
+    color:#fff;
+    font-size: 6.5rem;
+    text-transform: uppercase;
+}
+
+.home .content p{
+    color:#fff;
+    font-size: 1.7rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.home .image img{
+    width: 70%;
+    height: 550px;
+}
+
+.home .content .btn{
+    color: #444;
+    background: #fff;
+}
+
+.home .content .btn:hover{
+    color: #fff;
+    background: none;
+    border-color: #fff;
+}
+
+.feature {
+    padding: 0 7%;
+    padding-top: 7.5rem;
+    padding-bottom: 3rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+}
+
+/* Center the heading independently */
+.heading {
+    text-align: center; /* Horizontally center the text */
+    margin-bottom: 2rem; /* Add space below the heading */
+    font-weight: bold;
+    color: var(--black);
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    position: relative;
+}
+
+.feature .box-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    width: 100%;
+}
+
+.feature .box-container .box{
+    text-align: center;
+    height: 450px;
+    padding: 2rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    flex: 1 1 calc(33.33% - 2rem);
+    box-sizing: border-box;
+}
+
+.feature .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    padding: 1.4rem 0;
+}
+
+.feature .box-container .box p{
+    font-size: 1.3rem;
+    color: #666;
+    padding-bottom: 1rem;
+}
+
+.feature .box-container .box img{
+    width: 100%; /* Make the image fit the box width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 150px; /* Set a maximum width for better control */
+    margin: 0 auto; /* Center the image horizontally if smaller */
+    display: block; /* Remove inline spacing */
+}
+
+.feature .box-container .box .digital{
+    width: 49.5%; /* Make the image fit the box width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 150px; /* Set a maximum width for better control */
+    margin: 0 auto; /* Center the image horizontally if smaller */
+    display: block; /* Remove inline spacing */
+}
+
+.feature .box-container .box .sales{
+    width: 100%; /* Make the image fit the box width */
+    padding-top: 5px;
+    padding-bottom: 10px;
+    height: auto; /* Maintain aspect ratio */
+    max-width: 200px; /* Set a maximum width for better control */
+    margin: 0 auto; /* Center the image horizontally if smaller */
+    display: block; /* Remove inline spacing */
+}
+
+
+
+
+
+
+.service{
+    background: var(--black);
+    padding: 0 7%;
+    padding-top: 7.5rem;
+    padding-bottom: 3rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+}
+
+.service .heading{
+    text-align: center; /* Horizontally center the text */
+    margin-bottom: 8rem; /* Add space below the heading */
+    font-weight: bold;
+    color: #fff;
+    padding: .5rem;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    position: relative;
+}
+
+.service .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service .box-container .box{
+    width: 400px;
+    height: 400px;
+    padding: 5rem;
+    margin: 1.5rem;
+    flex: 1 1 calc(32% - 2rem);
+    border: .1rem solid #fff3;
+    text-align: center;
+}
+
+.service .box-container .box img{
+    width: 100%; /* Make the image fit the box width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 150px; /* Set a maximum width for better control */
+    margin: 0 auto; /* Center the image horizontally if smaller */
+    display: block; /* Remove inline spacing */
+}
+
+.service .box-container .box .graph{
+    display: flex; /* Flexbox ensures centering */
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    width: 100%; /* Ensure the container fills the box */
+    height: auto; /* Adjust to content size */
+    text-align: center; /* For inline content centering */
+}
+
+.service .box-container .box .monitor{
+    display: flex; /* Flexbox ensures centering */
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    width: 100%; /* Ensure the container fills the box */
+    height: auto; /* Adjust to content size */
+    text-align: center; /* For inline content centering */
+}
+
+.service .box-container .box .graph img{
+    max-width: 250px; /* Ensure uniform size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 0;
+    transform: translateY(-40px); /* Move the image upward by 10px */
+    position: relative; /* Ensure the transform takes effect */
+}
+
+.service .box-container .box .monitor img{
+    max-width: 150px; /* Ensure uniform size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.service .box-container .box .graph {
+    width: 100%; /* You can adjust the size of the graph container */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.service .box-container .box .graph h3 {
+    margin-top: -75px; /* Adjust spacing above the heading */
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+}
+
+/* Adjusting the paragraph text in the .graph box */
+.service .box-container .box .graph p {
+    margin-top: 0; /* Adjust spacing below the heading */
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+
+
+.service .box-container .box h3{
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.service .box-container .box p{
+    font-size: 1.5rem;
+    color: #fff;
+    padding-bottom: 1rem;
+}
+
+.service .box-container .box:hover{
+    background: #fff;
+}
+
+.service .box-container .box:hover h3{
+    color: var(--black);
+}
+
+.service .box-container .box:hover p{
+    color: #666;
+}
+
+/* project section css starts */
+
+.project{
+    padding: 0 7%;
+    padding-top: 7.5rem;
+    padding-bottom: 3rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+}
+
+.project .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project .box-container .box{
+    margin: 1rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    overflow: hidden;
+    height: 45rem;
+    flex: 1 1 30rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.project .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project .box-container .box .number{
+    position: absolute;
+    top: .2rem; left: 37rem;
+    font-size: 5rem;
+    color: rgba(0,0,0,.2);
+    font-weight: bolder;
+    z-index: 10;
+    text-align: right;
+}
+
+.project .box-container .box::before{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    transition: .3s ease-out;
+    clip-path: circle(23% at 95% 0);
+}
+
+.project .box-container .box:hover::before{
+    clip-path: circle(100%);
+}
+
+.project .box-container .box .info{
+    position: absolute;
+    top: 70%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+}
+
+.project .box-container .box:hover .info{
+    transition-delay: .2s;
+    opacity: 1;
+    top: 50%;
+}
+
+.project .box-container .box .info h3{
+    color: var(--black);
+    font-size: 2.5rem;
+}
+
+.project .box-container .box .info p{
+    color: #666;
+    font-size: 2rem
+}
+
+/* prject section ends */
+
+/* team section starts */
+
+.team{
+    background: var(--yellow);
+    padding: 0 7%;
+    padding-top: 7.5rem;
+    padding-bottom: 3rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+}
+
+.team .heading{
+    color: #000;
+}
+
+.team .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20rem;
+}
+
+.team .box-container .box{
+    width: 27rem;
+    background: #fff;
+    position: relative;
+    margin: 1rem;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+}
+
+.team .box-container .box img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.team .box-container .box span{
+    font-size: 1.5rem;
+    color: var(--orange);
+}
+
+.team .box-container .box p{
+    padding: 1rem 2.5rem;
+    font-size: 1.4rem;
+    color: #666;
+}
+
+.team .box-container .box .share{
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    background: var(--orange);
+    display: flex;
+    justify-content: center;
+}
+
+.team .box-container .box .share a{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+.team .box-container .box .share a:hover{
+    background: #fff;
+    color: var(--black);
+}
+
+
+
+/**price section starts**/
+
+.price{
+    background: var(--black);
+    padding: 0 7%;
+    padding-top: 7.5rem;
+    padding-bottom: 3rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+}
+
+.price .heading{
+    color: #fff;
+}
+
+.price .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.price .box-container .box{
+    flex: 1 1 35rem;
+    height: 50rem;
+    margin: 4rem;
+    text-align: center;
+    padding: 4rem;
+    border: .1rem solid var(--yellow);
+}
+
+.price .box-container .box img{
+    width: 70%;
+}
+
+.price .box-container .box h3{
+    font-size: 3rem;
+    color: #fff;
+    padding-top: 1rem;
+}
+
+.price .box-container .box .amount{
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    color: var(--yellow);
+    padding: 1rem;
+}
+
+.price .box-container .box .amount span{
+    font-size: 2.5rem;
+}
+
+.price .box-container .box p{
+    color: #eee;
+    font-size: 1.8rem;
+    padding: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media (max-width:1200px){
+
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:991px){
+
+    section{
+        padding:0 3%;
+        padding-top: 7.5rem;
+        padding-bottom: 3rem;
+        min-height: 100vh;
+    }
+}
+
+@media (max-width:768px){
+
+    #menu-bar{
+        display: block;
+    }
+
+    header .navbar{
+        position: absolute;
+        top:100%; left: 0%;
+        width: 100%;
+        background: #eee;
+        height: calc(100vh - 100%);
+        border-top: .1rem solid rgba(0,0,0,.2);
+        display: none;
+    }
+
+    header .navbar.nav-toggle{
+        display: block;
+
+    }
+
+    header .navbar a{
+        margin: 1rem;
+        display: block;
+        padding: 1.3rem 0;
+        background: #fff;
+        text-align: center;
+        border: .1rem solid #444;
+        animation: nav-links .5s linear backwards;
+        animation-delay: calc(.2s * var(--i));
+    }
+
+    @keyframes nav-links{
+        0%{
+            transform:translateY(-50rem);
+            opacity: 0;
+        }    
+    }
+
+    .fa-times{
+        transform: rotate(100deg);
+    }
+
+    .home .content{
+        text-align: center;
+    }
+
+    .home .content h3{
+        font-size: 4rem;
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 3.5rem;
+    }
+
+    .home .image img{
+        width: 80%;
+        height: 320px;
+    }
+    .home .content{
+        padding-right: 30px;
+        padding-top: 60px;
+    }
+
+    .team .box-container .box{
+        width: 100%;
+    }
+
+}
