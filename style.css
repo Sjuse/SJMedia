@@ -18,7 +18,6 @@
 html{
     font-size: 62.5%;
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 section{
@@ -113,7 +112,7 @@ header .navbar a:hover{
 
 .home .content p{
     color:#fff;
-    font-size: 1.7rem;
+    font-size: 2rem;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -543,7 +542,7 @@ header .navbar a:hover{
 
 .price .box-container .box{
     flex: 1 1 35rem;
-    height: 50rem;
+    height: 55rem;
     margin: 4rem;
     text-align: center;
     padding: 4rem;
@@ -580,19 +579,121 @@ header .navbar a:hover{
 
 
 
+.contact{
+    background: #f2f2f2;
+    padding: 0 7%;
+    padding-top: 7.5rem;
+    padding-bottom: 3rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+}
+
+.contact .row{
+    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.contact .row form{
+    flex: 1 1 40rem;
+    padding: 2rem;
+}
+.contact .row form .inputBox{
+    position: relative;
+}
+
+.contact .row form .inputBox input, .contact .row form .inputBox textarea{
+    width: 100%;
+    margin: 1.5rem 0;
+    padding: .7rem 1rem;
+    font-size: 1.7rem;
+    color: #666;
+    border: .1rem solid rgba(0,0,0,.2);
+    text-transform: none;
+    position: relative;
+}
+
+.contact .row form .inputBox textarea{
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row form .inputBox label{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 2.4rem; left: 1rem;
+    color: #444;
+    transition: 0.3s ease;
+    padding: 0 0.2rem;
+}
+
+.contact .row form .inputBox input:focus ~ label, 
+.contact .row form .inputBox textarea:focus ~ label,
+.contact .row form .inputBox input:valid ~ label, 
+.contact .row form .inputBox textarea:valid ~ label{
+    top: -.7rem; left: 0;
+    color: var(--orange);
+    font-size: 1.3rem;
+}
 
 
 
 
+.footer{
+    background: var(--black);
 
+}
 
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.footer .box-container .box{
+    margin: 2rem;
+    flex: 1 1 25rem;
+}
 
+.footer .box-container .box h3{
+    font-size: 3rem;
+    color: #fff;
+    padding: 1rem 0;
+}
 
+.footer .box-container .box p{
+    font-size: 1.8rem;
+    color: #fff;
+    padding: .5rem 0;
+}
 
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.7rem;
+    color: #fff;
+    padding: .5rem 0;
+}
 
+.footer a:hover{
+    text-decoration: underline;
+}
 
+.footer .credit{
+    font-size: 2rem;
+    background: #fff;
+    color: #666;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    letter-spacing: .1rem;
+}
 
+.footer .credit a{
+    color:var(--orange);
+
+}
 
 
 
